@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        main {
+            background-image: url(background.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Login Page</h1>
+    </header>
+    <main>
+
+        <div class="login-container">
+            <h2 id="main-content">Login</h2>
+            <form id="login-form">
+                <div class="input-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                    <div class="error-message" id="email-error-message"></div>
+                </div>
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                    <p class="error-message" id="password-error-message"></p>
+                </div>
+                <div class="input-group">
+                    <button id="login-button" type="submit">Login</button>
+                </div>
+            </form>
+            <div class="additional-links">
+                <a class="forgotPassword"
+                    href="https://www.facebook.com/login/identify/?ctx=recover&ars=facebook_login&from_login_screen=0">Forgot Password?</a>
+                <span>|</span>
+                <a class="createAccount" href="https://support.google.com/mail/answer/56256?hl=en">Create Account</a>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>Version @1.2.3.0.0 10:32 AM 19-02-2024</p>
+    </footer>
+
+    <script defer src="script.js"></script>
+</body>
+
+</html>
